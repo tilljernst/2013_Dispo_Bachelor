@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%_____________ ___    _____  __      __ 
+%\____    /   |   \  /  _  \/  \    /  \  Institute of Applied
+%  /     /    ~    \/  /_\  \   \/\/   /  Psychology
+% /     /\    Y    /    |    \        /   Zürcher Hochschule 
+%/_______ \___|_  /\____|__  /\__/\  /    fuer Angewandte Wissen.
+%        \/     \/         \/      \/                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Project     : Latex Vorlage SemArbeit
+% Title       : 
+% File        : doc.tex Rev. 00
+% Date        : 10.10.2012
+% Author      : Till J. Ernst
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{header}
+
+\begin{document}
+\title{PA/BA Latex Vorlage}
+\author{Till J. Ernst}
+
+%PDF Titelblatt Dispo TBD
+\includepdf{images/Seminararbeit_Titelblatt.pdf}
+
+% Dispo Inhalt
+% -----------------------------------
+% Einleitung
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\include{content/dispositionBachelorarbeit}
+\include{content/provisorischeGliederung}
+
+% .....
+
+% Literaturverzeichnis
+\include{content/literatur}
+
+
+% Blatt mit Unterschrift
+\includepdf{images/Seminararbeit_Unterschrift.pdf}
+
+
+\end{document}

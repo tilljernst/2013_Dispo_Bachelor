@@ -1,0 +1,37 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%_____________ ___    _____  __      __ 
+%\____    /   |   \  /  _  \/  \    /  \  Institute of Applied
+%  /     /    ~    \/  /_\  \   \/\/   /  Psychology
+% /     /\    Y    /    |    \        /   Zuercher Hochschule 
+%/_______ \___|_  /\____|__  /\__/\  /    fuer Angewandte Wissen.
+%        \/     \/         \/      \/                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Project     : Latex Vorlage SemArbeit
+% Title       : 
+% File        : acronyms.tex Rev. 00
+% Date        : 10.10.2012
+% Author      : Till J. Ernst
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Def. Acronym
+\newacronym{swb}{SWB}{subjektives Wohlbefinden}
+
+\newlength{\acronymlabelwidth}
+\setlength{\acronymlabelwidth}{0.25\textwidth}
+\newglossarystyle{listwithwidth}{%
+  \renewenvironment{theglossary}%
+    {\begin{description}}{\end{description}}%
+  \renewcommand*{\glossaryheader}{}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \item[\parbox{\acronymlabelwidth}{\glsentryitem{##1}\glstarget{##1}{##2}}]
+       ##3\glspostdescription\space ##5}%
+  \renewcommand*{\glossarysubentryfield}[6]{%
+    \glssubentryitem{##2}%
+    \glstarget{##2}{\strut}##4\glspostdescription\space ##6.}%
+  \renewcommand*{\glsgroupskip}{\indexspace}%
+}
+
+
