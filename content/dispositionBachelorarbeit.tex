@@ -55,6 +55,19 @@ tbd
 Bei dieser Bachelorarbeit handelt es sich um eine Querschnitts-Studie, in der mittels Fragebogen in erster Linie das subjektive Wohlbefinden, die Häufigkeit von angewendetem Medien-Multitasking und die Fähigkeit, wie Medien-Multitasking betrieben wird, empirische erhoben werden soll. Die erhobenen Daten sollen mittels deskriptiver Statistik ausgewertet werden.
 \subsection*{Untersuchungsplan und Vorgehen}
 
+\begin{figure}[H]
+	\centering
+	    \includegraphics[width=0.9\textwidth]
+		{images/Untersuchungsplan_Grob.png}
+	\caption{Untersuchungsplan grob - Bachelorarbeit}
+	\label{fig.UntersuchungsplanGrob}
+\end{figure}
+Der Untersuchungsplan unterteilt sich grob in fünf Kategorien (Milestones): Disposition, Theoretischer Teil, Tests, Fertigstellung und Präsentation (ein detaillierter Untersuchungsplan ist im Anhang zu finden).\par
+\textbf{Disposition:} In der Kategorie Disposition beinhaltet der Untersuchungsplan die Korrektur der Disposition und die Abgabe am 29.11.2013.\par
+\textbf{Theoretischer Teil:} Der theoretische Teil umfasst im groben die gesamte theoretische Aufarbeitung der Bachelorarbeit. Unterteilt wird dieser Teil in Einleitung, Multitasking, subjektives Wohlbefinden, Theorie zu den Tests, Diskussion und Fertigstellung der Arbeit. \par
+\textbf{Tests:} Die Kategorie Tests beinhaltet das Einlesen in die Tests, das Schreiben des Theorieteils, die Koordination und das Einarbeiten mit den Testwerkzeugen (z.B. Unipark, Surveymonkey, etc.), das Zusammenstellen der Umfrage, das Verfassen des Mailings für die Probandengewinnung und Sammeln der Kontaktadressen (Unis, Fachhochschulen), das Versenden und Durchführen der Umfrage per Mail (inkl. Abwarten und gegebenenfalls wiederholen), die Einarbeitung mit dem freien Statistik-Tool R \cite{Luhmann2013}, das Auswerten der Resultate mit R, die Aufbereitung der Ergebnisse und das dokumentieren der Ergebnisse.\par
+\textbf{Fertigstellung:} In der Fertigstellung wird Zeit für eine allfällige Überarbeitung der Arbeit eingeplant, die externe Durchsicht und Korrektur, die eigene Korrektur, das Binden der Arbeit und die Abgabe der Arbeit in Kalenderwoche 22.\par
+\textbf{Präsentation:} Die Präsentation besteht aus dem Erarbeiten eines wissenschaftlichen Posters und der Präsentation des Posters in KW25.\par
 \subsection*{Datenerhebung}
 Im Fokus dieser Untersuchung steht die Erfassung wie häufig Medien-Multitasking praktiziert wird, wie fähig diese Probanden sind, Medien-Multitasking auszuführen und wie hoch ihr subjektives Wohlbefinden dabei ist. \\ 
 Des weiteren werden demographische Daten wie Alter, Geschlecht, Nationalität, Studienrichtung, bereits absolvierte Ausbildung, Beruf neben dem Studium und Familienstand abgefragt.\\
@@ -65,10 +78,20 @@ Die Erfassung dieser Daten erfolgt mittels Fragebogen, der aus einzelnen Frageb�
     \item \textit{FLZ - Fragen zur Lebenszufriedenheit} für die Erfassung des subjektiven Wohlbefindens \cite{Braehler1999}.
 \end{enumerate}
 \subsection*{Stichprobe und Rekrutierung}
-
+Die Stichprobengrösse ist für die Untersuchung der Nebenfragestellung relevant, da hier eine Signifikanz Niveau angestrebt wird. Für die Beantwortung der Hauptfragestellung ist die Stichprobengrösse von untergeordneter Rolle, da es sich um die Erstellung einer Korrelation handelt.\\
+Anhand der Nebenfragestellung wird eine Stichprobengrösse von insgesamt 176 Personen angestrebt (88 Personen mit multiplen Rollen und 88 Personen mit einer einzigen Rolle). Diese Stichprobengrösse wurde mittels G*Power für einen t-Test für unabhägige Stichproben mit einem mittleren Effekt von $d = 0.5$, einem Signifikanzniveau von $\alpha=0.05$ und einer Teststärke von $1-\beta=0.95$ berechnet.
+Die Rekrutierung der Studierenden erfolgt mittels Mailing in den deutschsprachigen Fachhochschulen und Universitäten.\par
+\textbf{Einschlusskriterien:}
+Studenten von Universitäten und Fachhochschulen mit keiner oder mehreren Rollen neben dem Studium. Als eine Rolle werden Tätigkeiten oder Verpflichtungen angeschaut, die zusammen gleich einem Drittel oder mehr des Pensum des Studiums entsprechen (z.B. die zusätzliche Rolle oder Rollen sollen vom Aufwand pro Woche mindestens einem Drittel der durchschnittlichen Anzahl Stunden Studium pro Woche entsprechen).\par
+\textbf{Ausschlusskrieterien:}
+Ausgeschlossen werden Studierende eines Fernstudiums, da hier weitere Bedingungen gegeben sind, die eine Vergleichbarkeit erschwert.
+Es werden nur Personen berücksichtigt, die der deutschen Sprache mächtig sind. Der Fragebogen wird lediglich auf Deutsch zur Verfügung gestellt.
 \subsection*{Statistik}
 Der Zusammenhang zwischen den einzelnen Variablen Häufigkeit von angewendetem Medien-Multitasking, Fähigkeit, Ablenkung abzublocken und dem subjektiven Wohlbefinden, wird mittels Korrelation berechnet. Dabei soll ein mittlerer Zusammenhang mittels Produkt-Moment-Korrelationskoeffizienten (Pearson-Korreltaions-Koeffizienten |r|=0.3) zwischen den einzelnen Variablen nachgewiesen werden. Um den Zusammenhang der Haupthypothese zu berechnen wird eine Partialkerrelation zwischen den Variablen Häufigkeit, Fähigkeit und subjektivem Wohlbefinden gebildet.\\
-Für die Medien-Multitasking Häufigkeit soll der \textit{Medien Multitasking Index - MMI} aus dem \textit{Media Use Questionnaire} gebildet werden \cite{Ophir2009}.
+Für die Medien-Multitasking Häufigkeit soll der \textit{Medien Multitasking Index - MMI} aus dem \textit{Media Use Questionnaire} gebildet werden \cite{Ophir2009}.\par
+Für die Signifikanzprüfung der unterschiedlichen Rollen soll mittels t-Test untersucht werden, od sich die Mittelwerte der Studenten mit mehreren Rollen gegenüber den Studenten mit nur einer Rolle (das Studium) systematisch (signifikant) voneinader unterschieden. Es wir ein mittlerer Effekt ($d=0.5$) erwartet. Das Signifikanzniveau wir auf ($\alpha=0.05$) angesetzt und die Teststärke mit ($1-\beta=0.95$) angewendet.\\
+Die Hypothese geht davon aus, dass Studierende mit mehreren Rollen einem höheren Medien-Multitasking ausgesetzt sind als Studierende mit nur einer Rolle. Daraus ergibt sich eine gerichtete Hypothese, die gegen die Nullhypothese getestet werden soll.\\
+Neben der Häufigkeit wird das subjektive Wohlbefinden analog mit einem gerichteten t-Test untersucht.
 \subsection*{Weitere Bedingungen}
 tbd
 % Abgrenzung -----------------------------------------------------
